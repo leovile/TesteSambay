@@ -9,7 +9,7 @@ import { ProductContext } from '../../context';
 interface ProductData {
   id: number;
   image: StaticImageData;
-  description: string;
+  name: string;
   price: string;
   payment: string;
   tag: string;
@@ -30,7 +30,7 @@ const ProductCard: React.FC<ProductCardComponentProps> = ({ product }) => {
             <S.ProductImage src={product.image} layout="fill" />
           </S.ImageWrapper>
           <S.DetailsWrapper>
-            <S.Description>{product.description}</S.Description>
+            <S.Name>{product.name}</S.Name>
             <S.Price>{product.price}</S.Price>
             <S.Payment>{product.payment}</S.Payment>
             <S.Tag>{product.tag}</S.Tag>

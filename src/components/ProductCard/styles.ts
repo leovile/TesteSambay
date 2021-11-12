@@ -32,7 +32,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Description = styled.p`
+export const Name = styled.p`
   color: var(--gray);
 
   font-size: 1.5rem;

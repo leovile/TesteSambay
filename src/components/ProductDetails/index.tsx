@@ -1,4 +1,6 @@
-import { Fragment, useContext, useEffect } from 'react';
+import { Fragment, useContext } from 'react';
+
+import { MdKeyboardArrowLeft } from 'react-icons/md';
 
 import * as S from './styles';
 
@@ -6,31 +8,42 @@ import { productList } from 'data';
 
 import { ProductContext } from '../../context';
 
-interface ProductData {
-  id: number;
-  image: StaticImageData;
-  description: string;
-  price: string;
-  payment: string;
-  tag: string;
-}
+import Image from 'next/image';
 
-interface ProductCardComponentProps {
-  product: ProductData;
-}
+import * as T from './types';
 
-const ProductDetails: React.FC<ProductCardComponentProps> = () => {
+import Link from 'next/link';
+
+const ProductDetails: React.FC<T.ProductCardComponentProps> = () => {
   const { productId } = useContext(ProductContext);
 
   const productMatchesContext = productList[productId].id === productId;
-  const productDescription = productList[productId].description;
+  const productName = productList[productId].name;
+  const productImage = productList[productId].image;
 
   return (
     <Fragment>
       <S.Container>
-        <S.Description>
-          {productMatchesContext && productDescription}
-        </S.Description>
+        <Link href="/" passHref>
+          <S.Wrapper>
+            <MdKeyboardArrowLeft />
+            <S.Name>{productMatchesContext && productName}</S.Name>
+          </S.Wrapper>
+        </Link>
+
+        <S.DetailsWrapper>
+          <S.ImageWrapper>
+            <Image src={productMatchesContext && productImage} />
+          </S.ImageWrapper>
+
+          <S.Details>
+            <S.State>Produto Novo</S.State>
+            <S.Price>50</S.Price>
+            <S.Title>Descrição</S.Title>
+            <S.Description>asduashboduasbdouba</S.Description>
+            <S.Title>Detalhes do Produto</S.Title>
+          </S.Details>
+        </S.DetailsWrapper>
       </S.Container>
     </Fragment>
   );
