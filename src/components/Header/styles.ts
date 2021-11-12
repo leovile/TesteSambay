@@ -14,7 +14,9 @@ export const Container = styled.div`
   padding: 0 5%;
 `;
 
-export const LogoWrapper = styled.div``;
+export const LogoWrapper = styled.div`
+  min-width: 15rem;
+`;
 
 export const Logo = styled(Image)``;
 

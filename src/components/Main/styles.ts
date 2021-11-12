@@ -8,9 +8,13 @@ export const Container = styled.div`
   gap: 3rem;
 
   width: 100%;
-  height: calc(100% - 10rem);
+  height: calc(100vh - 10rem);
 
-  padding: 5% 5%;
+  padding: 2% 10%;
+
+  @media screen and (max-width: 1366px) {
+    gap: 0rem;
+  }
 `;
 
 export const SalesWrapper = styled.div`
@@ -19,15 +23,21 @@ export const SalesWrapper = styled.div`
   gap: 3rem;
 
   width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 1366px) {
+    gap: 1rem;
+  }
 `;
 
 export const LastProductsWrapper = styled(SalesWrapper)``;
 
 export const CardsWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+
+  height: 100%;
 `;
 
 export const SalesTitle = styled.h1`
