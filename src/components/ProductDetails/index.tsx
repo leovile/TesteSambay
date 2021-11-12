@@ -20,6 +20,9 @@ const ProductDetails: React.FC<T.ProductCardComponentProps> = () => {
   const productMatchesContext = productList[productId].id === productId;
   const productName = productList[productId].name;
   const productImage = productList[productId].image;
+  const productPrice = productList[productId].price;
+  const productState = productList[productId].state;
+  const productDescription = productList[productId].description;
 
   return (
     <Fragment>
@@ -37,10 +40,12 @@ const ProductDetails: React.FC<T.ProductCardComponentProps> = () => {
           </S.ImageWrapper>
 
           <S.Details>
-            <S.State>Produto Novo</S.State>
-            <S.Price>50</S.Price>
+            <S.State>{productMatchesContext && productState}</S.State>
+            <S.Price>{productMatchesContext && productPrice}</S.Price>
             <S.Title>Descrição</S.Title>
-            <S.Description>asduashboduasbdouba</S.Description>
+            <S.Description>
+              {productMatchesContext && productDescription}
+            </S.Description>
             <S.Title>Detalhes do Produto</S.Title>
           </S.Details>
         </S.DetailsWrapper>
