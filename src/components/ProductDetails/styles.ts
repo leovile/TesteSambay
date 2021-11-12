@@ -18,8 +18,11 @@ export const Container = styled.div`
 `;
 
 export const Description = styled.p`
-  color: var(--gray);
+  color: red;
 
   font-size: 1.5rem;
   font-weight: 700;
+
+  height: 10rem;
+  width: 50rem;
 `;

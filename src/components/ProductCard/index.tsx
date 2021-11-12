@@ -1,10 +1,13 @@
-import { Fragment } from 'react';
+import { Fragment, useContext } from 'react';
 
 import Link from 'next/link';
 
 import * as S from './styles';
 
+import { ProductContext } from '../../context';
+
 interface ProductData {
+  id: number;
   image: StaticImageData;
   description: string;
   price: string;
@@ -17,10 +20,12 @@ interface ProductCardComponentProps {
 }
 
 const ProductCard: React.FC<ProductCardComponentProps> = ({ product }) => {
+  const { setProductId } = useContext(ProductContext);
+
   return (
     <Fragment>
       <Link href="/DetailedProduct" passHref>
-        <S.Container>
+        <S.Container onClick={() => setProductId(product.id)}>
           <S.ImageWrapper>
             <S.ProductImage src={product.image} layout="fill" />
           </S.ImageWrapper>

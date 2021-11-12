@@ -69,6 +69,7 @@ export const Tag = styled.p`
 `;
 
 export const ImageWrapper = styled.div`
+  position: relative;
   width: 100%;
   height: 18rem;
   > div {

@@ -1,4 +1,5 @@
 import Header from 'components/Header';
+import { ProductProvider } from 'context';
 import { AppProps } from 'next/app';
 
 import GlobalStyles from 'styles/global';
@@ -6,9 +7,11 @@ import GlobalStyles from 'styles/global';
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <GlobalStyles />
-      <Header />
-      <Component {...pageProps} />
+      <ProductProvider>
+        <GlobalStyles />
+        <Header />
+        <Component {...pageProps} />
+      </ProductProvider>
     </>
   );
 }

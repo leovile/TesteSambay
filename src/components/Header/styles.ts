@@ -16,6 +16,8 @@ export const Container = styled.div`
 
 export const LogoWrapper = styled.div`
   min-width: 15rem;
+
+  cursor: pointer;
 `;
 
 export const Logo = styled(Image)``;
