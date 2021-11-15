@@ -13,7 +13,12 @@ export const productList = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 17,50',
     payment: 'Em até 2x',
-    tag: 'Promoção'
+    tag: 'Promoção',
+    category: 'Decoração',
+    size: '2x5',
+    weight: '200g',
+    material: 'Alumínio',
+    brand: 'By Nilson Muller'
   },
   {
     id: 1,
@@ -24,7 +29,12 @@ export const productList = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 50,00',
     payment: 'Em até 2x',
-    tag: 'Promoção'
+    tag: 'Promoção',
+    category: 'Variados',
+    size: '2x2',
+    weight: '50g',
+    material: 'Papel',
+    brand: 'By Nilson Muller'
   },
   {
     id: 2,
@@ -35,7 +45,12 @@ export const productList = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 10,00',
     payment: 'Em até 2x',
-    tag: 'Promoção'
+    tag: 'Promoção',
+    category: 'Decoração',
+    size: '3x3',
+    weight: '80g',
+    material: 'Alumínio',
+    brand: 'By Nilson Muller'
   },
   {
     id: 3,
@@ -46,7 +61,12 @@ export const productList = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 40,00',
     payment: 'Em até 2x',
-    tag: 'Promoção'
+    tag: 'Promoção',
+    category: 'Decoração',
+    size: '5x5',
+    weight: '200g',
+    material: 'Cerâmica',
+    brand: 'By Nilson Muller'
   },
   {
     id: 4,
@@ -57,6 +77,11 @@ export const productList = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 50,00',
     payment: 'Em até 2x',
-    tag: 'Promoção'
+    tag: 'Promoção',
+    category: 'Variados',
+    size: '2x2',
+    weight: '50g',
+    material: 'Papel',
+    brand: 'By Nilson Muller'
   }
 ];

@@ -7,6 +7,11 @@ export interface ProductData {
   price: string;
   payment: string;
   tag: string;
+  category: string;
+  size: string;
+  weight: string;
+  material: string;
+  brand: string;
 }
 
 export interface ProductCardComponentProps {

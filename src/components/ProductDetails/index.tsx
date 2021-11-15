@@ -2,17 +2,17 @@ import { Fragment, useContext } from 'react';
 
 import { MdKeyboardArrowLeft } from 'react-icons/md';
 
-import * as S from './styles';
-
 import { productList } from 'data';
 
 import { ProductContext } from '../../context';
 
 import Image from 'next/image';
 
-import * as T from './types';
-
 import Link from 'next/link';
+
+import * as S from './styles';
+
+import * as T from './types';
 
 const ProductDetails: React.FC<T.ProductCardComponentProps> = () => {
   const { productId } = useContext(ProductContext);
@@ -23,30 +23,59 @@ const ProductDetails: React.FC<T.ProductCardComponentProps> = () => {
   const productPrice = productList[productId].price;
   const productState = productList[productId].state;
   const productDescription = productList[productId].description;
+  const productPayment = productList[productId].payment;
+  const productCategory = productList[productId].category;
+  const productSize = productList[productId].size;
+  const productBrand = productList[productId].brand;
+  const productWeight = productList[productId].weight;
+  const productMaterial = productList[productId].material;
 
   return (
     <Fragment>
       <S.Container>
-        <Link href="/" passHref>
-          <S.Wrapper>
+        <S.Wrapper>
+          <Link href="/" passHref>
             <MdKeyboardArrowLeft />
+          </Link>
+          <Link href="/" passHref>
             <S.Name>{productMatchesContext && productName}</S.Name>
-          </S.Wrapper>
-        </Link>
+          </Link>
+        </S.Wrapper>
 
         <S.DetailsWrapper>
           <S.ImageWrapper>
-            <Image src={productMatchesContext && productImage} />
+            <Image src={productMatchesContext ? productImage : ''} />
           </S.ImageWrapper>
 
           <S.Details>
-            <S.State>{productMatchesContext && productState}</S.State>
-            <S.Price>{productMatchesContext && productPrice}</S.Price>
+            <S.PaymentDetails>
+              <S.State>{productMatchesContext && productState}</S.State>
+              <S.PriceWrapper>
+                <S.Price>{productMatchesContext && productPrice}</S.Price>
+                <S.Payment>{productMatchesContext && productPayment}</S.Payment>
+              </S.PriceWrapper>
+              <S.GreenDiv></S.GreenDiv>
+            </S.PaymentDetails>
             <S.Title>Descrição</S.Title>
             <S.Description>
               {productMatchesContext && productDescription}
             </S.Description>
             <S.Title>Detalhes do Produto</S.Title>
+            <S.Subtags>
+              <S.LeftColumn>
+                <S.Category>
+                  {productMatchesContext && productCategory}
+                </S.Category>
+                <S.Size>{productMatchesContext && productSize}</S.Size>
+                <S.Brand>{productMatchesContext && productBrand}</S.Brand>
+              </S.LeftColumn>
+              <S.RightColumn>
+                <S.Weight>{productMatchesContext && productWeight}</S.Weight>
+                <S.Material>
+                  {productMatchesContext && productMaterial}
+                </S.Material>
+              </S.RightColumn>
+            </S.Subtags>
           </S.Details>
         </S.DetailsWrapper>
       </S.Container>

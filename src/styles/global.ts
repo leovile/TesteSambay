@@ -20,10 +20,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --blue: #05A5BF;
+    --blue: #00AFC2;
     --purple: #6085DB;
     --green: #69B64A;
     --gray: #4D4D4D;
+    --light-gray: #a1a1a1;
   }
 `;
 
