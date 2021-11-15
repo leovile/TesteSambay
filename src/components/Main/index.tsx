@@ -2,7 +2,8 @@ import { Fragment } from 'react';
 
 import * as S from './styles';
 
-import ProductCard from 'components/ProductCard';
+import PromotionProductCard from 'components/PromotionProductCard';
+import NewProductCard from 'components/NewProductCard';
 
 import uniqid from 'uniqid';
 
@@ -16,7 +17,10 @@ const Main: React.FC = () => {
           <S.SalesTitle>Produtos em Promoção</S.SalesTitle>
           <S.CardsWrapper>
             {productList.map((item) => (
-              <ProductCard key={uniqid()} product={item}></ProductCard>
+              <PromotionProductCard
+                key={uniqid()}
+                product={item}
+              ></PromotionProductCard>
             ))}
           </S.CardsWrapper>
         </S.SalesWrapper>
@@ -25,7 +29,7 @@ const Main: React.FC = () => {
           <S.LastProductsTitle>Últimas novidades</S.LastProductsTitle>
           <S.CardsWrapper>
             {productList.map((item) => (
-              <ProductCard key={uniqid()} product={item}></ProductCard>
+              <NewProductCard key={uniqid()} product={item}></NewProductCard>
             ))}
           </S.CardsWrapper>
         </S.LastProductsWrapper>

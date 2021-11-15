@@ -64,15 +64,19 @@ const ProductDetails: React.FC<T.ProductCardComponentProps> = () => {
             <S.Subtags>
               <S.LeftColumn>
                 <S.Category>
-                  {productMatchesContext && productCategory}
+                  Categoria: {productMatchesContext && productCategory}
                 </S.Category>
-                <S.Size>{productMatchesContext && productSize}</S.Size>
-                <S.Brand>{productMatchesContext && productBrand}</S.Brand>
+                <S.Size>Tamanho: {productMatchesContext && productSize}</S.Size>
+                <S.Brand>
+                  Marca: {productMatchesContext && productBrand}
+                </S.Brand>
               </S.LeftColumn>
               <S.RightColumn>
-                <S.Weight>{productMatchesContext && productWeight}</S.Weight>
+                <S.Weight>
+                  Peso: {productMatchesContext && productWeight}
+                </S.Weight>
                 <S.Material>
-                  {productMatchesContext && productMaterial}
+                  Material: {productMatchesContext && productMaterial}
                 </S.Material>
               </S.RightColumn>
             </S.Subtags>

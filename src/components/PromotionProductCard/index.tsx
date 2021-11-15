@@ -6,27 +6,11 @@ import * as S from './styles';
 
 import { ProductContext } from '../../context';
 
-interface ProductData {
-  id: number;
-  image: StaticImageData;
-  state: string;
-  name: string;
-  description: string;
-  price: string;
-  payment: string;
-  tag: string;
-  category: string;
-  size: string;
-  weight: string;
-  material: string;
-  brand: string;
-}
+import * as T from './types';
 
-interface ProductCardComponentProps {
-  product: ProductData;
-}
-
-const ProductCard: React.FC<ProductCardComponentProps> = ({ product }) => {
+const PromotionProductCard: React.FC<T.ProductCardComponentProps> = ({
+  product
+}) => {
   const { setProductId } = useContext(ProductContext);
 
   return (
@@ -40,7 +24,7 @@ const ProductCard: React.FC<ProductCardComponentProps> = ({ product }) => {
             <S.Name>{product.name}</S.Name>
             <S.Price>{product.price}</S.Price>
             <S.Payment>{product.payment}</S.Payment>
-            <S.Tag>{product.tag}</S.Tag>
+            <S.Tag>Promoção</S.Tag>
           </S.DetailsWrapper>
         </S.Container>
       </Link>
@@ -48,4 +32,4 @@ const ProductCard: React.FC<ProductCardComponentProps> = ({ product }) => {
   );
 };
 
-export default ProductCard;
+export default PromotionProductCard;
