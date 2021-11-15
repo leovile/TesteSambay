@@ -7,7 +7,7 @@ Para ver funcionando, basta acessar o link abaixo.
 
 Caso queira rodar localmente na sua máquina:
 
-1 - Clone esse repositório.
-2 - Rode o comando yarn.
-3 - Rode o comando yarn dev.
+1 - Clone esse repositório./br
+2 - Rode o comando yarn./br
+3 - Rode o comando yarn dev./br
 4 - Pronto!
