@@ -1,7 +1,7 @@
 import ProductDetails from 'components/ProductDetails';
 import { NextPage } from 'next';
 
-import * as T from './types';
+import * as T from '../../types/types';
 
 const DetailedProduct: NextPage<T.ProductCardComponentProps> = ({
   product
