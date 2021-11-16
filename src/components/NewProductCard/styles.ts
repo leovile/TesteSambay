@@ -30,10 +30,8 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 1366px) {
-    width: 15rem;
-    max-width: 14rem;
-
-    height: 90%;
+    width: 12rem;
+    max-width: 12rem;
   }
 `;
 
@@ -57,6 +55,10 @@ export const Price = styled.p`
   font-weight: 700;
 
   margin-left: 1rem;
+
+  @media screen and (max-width: 1366px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Payment = styled.p`
@@ -81,6 +83,12 @@ export const Tag = styled.p`
   background-color: var(--green);
 
   border-radius: 0 0 1.5rem 1.5rem;
+
+  @media screen and (max-width: 1366px) {
+    height: 2rem;
+
+    font-size: 1.1rem;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -98,7 +106,7 @@ export const ImageWrapper = styled.div`
   }
 
   @media screen and (max-width: 1366px) {
-    height: 14rem;
+    height: 12rem;
   }
 `;
 
@@ -113,8 +121,6 @@ export const DetailsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  gap: 0.2rem;
 
   padding-top: 0.5rem;
 `;

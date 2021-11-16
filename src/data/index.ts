@@ -24,7 +24,7 @@ export const productList = [
     id: 1,
     image: image2,
     state: 'Produto usado',
-    name: 'Figurinhas do Zequinha',
+    name: 'Figurinhas',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 50,00',
@@ -72,7 +72,7 @@ export const productList = [
     id: 4,
     image: image2,
     state: 'Produto usado',
-    name: 'Figurinhas do Zequinha',
+    name: 'Figurinhas',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit malesuada leo at elementum. Nulla vehicula purus sed lacus viverra commodo. Fusce semper, augue eget vestibulum interdum, massa mi rhoncus dolor, sit amet rutrum justo urna quis dolor. Vivamus sit amet ipsum cursus, tempus leo non, ultrices risus. Fusce scelerisque.',
     price: 'R$ 50,00',

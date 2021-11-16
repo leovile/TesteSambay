@@ -28,6 +28,10 @@ export const Wrapper = styled.div`
     cursor: pointer;
   }
 
+  @media screen and (max-width: 1440px) {
+    padding-bottom: 5rem;
+  }
+
   @media screen and (max-width: 1366px) {
     padding-bottom: 4rem;
   }
@@ -45,6 +49,10 @@ export const ImageWrapper = styled.div`
 
   @media screen and (max-width: 1440px) {
     width: 35%;
+  }
+
+  @media screen and (max-width: 1366px) {
+    width: 30%;
   }
 `;
 
@@ -85,6 +93,10 @@ export const Title = styled.p`
   color: var(--blue);
 
   font-size: 3rem;
+
+  @media screen and (max-width: 1366px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -97,8 +109,12 @@ export const Description = styled.p`
   margin-left: 4rem;
   margin-bottom: 2rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1366px) {
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -134,6 +150,10 @@ export const LeftColumn = styled.ul`
   gap: 1rem;
 
   width: 25%;
+
+  @media screen and (max-width: 1440px) {
+    width: 40%;
+  }
 `;
 
 export const RightColumn = styled.ul`
@@ -143,6 +163,10 @@ export const RightColumn = styled.ul`
   gap: 1rem;
 
   width: 25%;
+
+  @media screen and (max-width: 1440px) {
+    width: 40%;
+  }
 `;
 
 export const Category = styled.li`
@@ -167,4 +191,8 @@ export const Subtags = styled.div`
   width: 100%;
 
   margin-left: 6rem;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 5rem;
+  }
 `;

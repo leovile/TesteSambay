@@ -12,8 +12,8 @@ export const Container = styled.div`
 
   padding: 2% 10%;
 
-  @media screen and (max-width: 1366px) {
-    gap: 0rem;
+  @media screen and (max-width: 1440px) {
+    gap: 0.5rem;
   }
 `;
 
@@ -24,6 +24,10 @@ export const SalesWrapper = styled.div`
 
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 1440px) {
+    gap: 0.5rem;
+  }
 
   @media screen and (max-width: 1366px) {
     gap: 1rem;
@@ -45,6 +49,10 @@ export const SalesTitle = styled.h1`
   font-weight: 500;
 
   color: var(--gray);
+
+  @media screen and (max-width: 1440px) {
+    font-size: 3rem;
+  }
 `;
 
 export const LastProductsTitle = styled(SalesTitle)``;
